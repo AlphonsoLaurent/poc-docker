@@ -1,0 +1,90 @@
+﻿128.151.200.50
+user-docker
+.db+ZD$K34P^<HdVoWFy
+
+
+128.151.200.51
+user-docker
+hvn~M@bM/{~):A3%,!?a
+
+wget 
+
+
+https://websdes.curp.gob.mx/WebServicesConsulta/services/ConsultaPorCurpSer
+vice?wsdl
+
+wget https://websdes.curp.gob.mx/WebServicesConsulta/services/ConsultaCurpDetalle Service?wsdl
+
+
+
+
+
+wsimport -keep -p com.client.curp.detalle https://websdes.curp.gob.mx/WebServicesConsulta/services/ConsultaCurpDetalleServicesap?wsdl
+
+
+wsimport -keep -p com.client.curp https://websdes.curp.gob.mx/WebServicesConsulta/services/ConsultaPorCurpServices?wsdl
+
+
+
+
+
+
+
+
+Comprimir docker
+
+
+
+docker save -o /Volumes/backup/VMFiles/imgdocker/fonacot.tar fonacot:latest
+docker load --input fonacot.tar
+
+
+wsimport -keep -p com.client.curp  http://128.151.200.50:8181/service/renapo?wsdl
+
+
+http://128.151.200.50:8181/service/renapo?wsdl
+
+
+
+
+
+
+
+
+http://128.152.240.4:8081/gestion/proxyrenapo 
+Credenciales de acceso:
+
+
+User: atolentino
+
+Pass: Alpha2019
+
+
+
+
+User: atolentino
+
+Pass: Alpha2019
+
+
+Direccion del GitLab
+
+http://128.152.240.4:8081/
+
+
+
+
+
+
+
+
+
+
+
+User VPN: cchavez.ultrasist
+Password:123456789
+
+
+vpn.fonacot.gob.mx
+
+

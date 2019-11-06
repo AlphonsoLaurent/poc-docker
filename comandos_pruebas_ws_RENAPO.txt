@@ -1,0 +1,23 @@
+======================USUARIOS QUE SE USARAN PARA LA AUTORIZACION=======
+Usuario: wsgestion
+Pass: wsgestion2011
+========================================================================
+
+==================PRUEBAS PENDIENTES====================================
+Deste este servidor 128.151.200.50 ejecutar las siguientes instrucciones: 
+
+curl -X POST https://websdes.curp.gob.mx/WebServicesConsulta/services/ConsultaPorCurpService?wsdl
+curl -X POST https://websdes.curp.gob.mx/WebServicesConsulta/services/ConsultaCurpDetalleService?wsdl
+wget https://websdes.curp.gob.mx/WebServicesConsulta/services/ConsultaPorCurpService?wsdl
+wget https://websdes.curp.gob.mx/WebServicesConsulta/services/ConsultaCurpDetalleService?wsdl
+
+========================================================================
+
+
+
+
+
+
+
+
+

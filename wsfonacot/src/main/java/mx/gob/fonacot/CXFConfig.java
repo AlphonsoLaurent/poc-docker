@@ -29,7 +29,7 @@ public class CXFConfig {
     public Endpoint endpoint() {
         EndpointImpl endpoint = new EndpointImpl(springBus(), new FonacotServicesImpl());
         endpoint.getFeatures().add(new LoggingFeature());
-        endpoint.publish("/ws");
+        endpoint.publish("/wsconsulta");
         return endpoint;
     }
     

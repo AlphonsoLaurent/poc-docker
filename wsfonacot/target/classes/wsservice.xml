@@ -31,7 +31,7 @@
  
         
     <!-- Definicion del Bean para el Proxy de Renapo --> 
-    <bean id="renapoMock" class="org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean">
+<!--    <bean id="renapoMock" class="org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean">
         <property name="serviceInterface" value="mx.gob.ws.RenapoMock" />
         <property name="wsdlDocumentUrl" value="http://localhost:8091/renapo-services?wsdl" />
         <property name="namespaceUri" value="http://ws.gob.mx/" />
@@ -39,7 +39,7 @@
         <property name="portName" value="RenapoMockImplPort" />
         <property name="lookupServiceOnStartup" value="false" />
         <property name="customProperties" ref="jaxwsCustomProperties" />
-    </bean>
+    </bean>-->
         
     <!-- Se asigna un timeout de 10 segunodos para los servicios internos (secuencia, 
     proxys). -->

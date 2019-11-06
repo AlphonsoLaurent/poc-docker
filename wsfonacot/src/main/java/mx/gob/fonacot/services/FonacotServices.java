@@ -8,7 +8,6 @@ import javax.jws.soap.SOAPBinding;
 import javax.jws.soap.SOAPBinding.Style;
 import mx.gob.fonacot.webservices.common.dto.DatosConsultaCurpDTO;
 import mx.gob.fonacot.webservices.common.dto.DatosConsultaDetallesDTO;
-import org.springframework.stereotype.Service;
  
 /***
  * 
@@ -18,13 +17,9 @@ import org.springframework.stereotype.Service;
  *
  */
  
-@WebService(name = "ConsultaRenapo")
+@WebService
 @SOAPBinding(style = Style.RPC)
-//@Service("consulta")
 public interface FonacotServices {
-	
-	
-	
 	/***
 	 * Este metodo es el encargado de consultar a renapo en caso de que renapo no se
 	 * encuentre dispoble entonces se consultar a los bussines object de este mismo
@@ -35,7 +30,7 @@ public interface FonacotServices {
 	 * @return ciudadanoDTO
 	 */
 	@WebMethod(operationName ="consultaPorCURP")
-	@WebResult(name = "WSSVIResult")
+	@WebResult(name = "response")
 	public String consultaPorCURP(@WebParam(name = "CURP") DatosConsultaCurpDTO datosConsultaCurpVO);
 	
 	
@@ -47,7 +42,7 @@ public interface FonacotServices {
 	 * @throws ExceptionFonacot 
 	 */
 	@WebMethod(operationName ="consultarCurpDetalle")
-	@WebResult(name = "respuestaCurpDetalle")
+	@WebResult(name = "response")
 	public String consultarCurpDetalle(@WebParam(name = "DatosPersonales") DatosConsultaDetallesDTO datosConsultaDetalles);
 	
 	

@@ -19,14 +19,12 @@ mx/gob/segob/dgti/ecurp/wserv/services/xsd/DatosConsultaDetalles.class
 mx/gob/ws/RenapoMockImplService.class
 mx/gob/fonacot/webservices/common/util/PropertiesConfiguracion.class
 mx/gob/fonacot/services/test/DatosConsultaCurp.class
-mx/gob/fonacot/services/WSTest.class
 mx/gob/segob/dgti/ecurp/wserv/services/xsd/package-info.class
 mx/gob/segob/dgti/ecurp/wserv/services/GetConfirm.class
 mx/gob/ws/package-info.class
 mx/gob/segob/dgti/ecurp/wserv/services/ConsultarCurpDetalleResponse.class
 mx/gob/fonacot/AppOutboundInterceptor.class
 mx/gob/fonacot/exception/ExceptionFonacot.class
-mx/gob/fonacot/services/WSTestImpl.class
 mx/gob/ws/ConsultarPorCurp.class
 mx/gob/segob/dgti/ecurp/wserv/services/ConsultarPorCurp.class
 mx/gob/fonacot/services/test/RenapoService.class

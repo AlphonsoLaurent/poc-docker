@@ -1,7 +1,7 @@
 package mx.gob.fonacot;
 
 import javax.xml.ws.Endpoint;
-import mx.gob.fonacot.services.WSTestImpl;
+import mx.gob.fonacot.services.FonacotServicesImpl;
 import org.apache.cxf.Bus;
 import org.apache.cxf.bus.spring.SpringBus;  
 import org.apache.cxf.ext.logging.LoggingFeature;
@@ -25,13 +25,15 @@ public class CXFConfig {
     	return springBus;
     }	
     
-    @Bean(name=Bus.DEFAULT_BUS_ID)
+    @Bean
     public Endpoint endpoint() {
-        EndpointImpl endpoint = new EndpointImpl(springBus(), new WSTestImpl());
+        EndpointImpl endpoint = new EndpointImpl(springBus(), new FonacotServicesImpl());
         endpoint.getFeatures().add(new LoggingFeature());
-        endpoint.publish("/wstest");
+        endpoint.publish("/ws");
         return endpoint;
     }
+    
+    
     
      
 }

@@ -32,8 +32,5 @@ public class CXFConfig {
         endpoint.publish("/wsconsulta");
         return endpoint;
     }
-    
-    
-    
      
 }
